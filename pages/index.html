@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Coffee Mastery - Premium Coffee Experience</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top coffee-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand animate-brand" href="#">
+                <h1 class="brand-text">C<i class="fa-solid fa-mug-hot coffee-icon"></i>ffee Mastery</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="8000">
+                    <div class="hero-section d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-2">
+                                    <div class="hero-image-wrapper ">
+                                        <img src="/images/image1.jpg" class="img-fluid hero-image" alt="Coffee Brewing Workshop">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 order-lg-1">
+                                    <div class="hero-content ">
+                                        <h1 class="hero-title">Master the Art of Coffee Brewing</h1>
+                                        <p class="hero-description">
+                                            Join us for an immersive coffee workshop where passion meets precision. Learn the secrets of brewing the perfect cup, from selecting premium beans to mastering the delicate balance of flavor.
+                                        </p>
+                                        <div class="hero-buttons">
+                                            <a href="#services" class="btn btn-coffee-primary btn-lg me-3">Explore Services</a>
+                                            <a href="#contact" class="btn btn-coffee-outline btn-lg">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                    <div class="hero-section d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-2">
+                                    <div class="hero-image-wrapper ">
+                                        <img src="/images/image2.jpg" class="img-fluid hero-image" alt="Coffee Crafting Secrets">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 order-lg-1">
+                                    <div class="hero-content ">
+                                        <h1 class="hero-title">Unlock the Secrets of Coffee Crafting</h1>
+                                        <p class="hero-description">
+                                            Step into the world of expert coffee making and uncover the techniques that transform a simple brew into a masterpiece. Whether you dream of being a barista or want to elevate your home brewing skills.
+                                        </p>
+                                        <div class="hero-buttons">
+                                            <a href="#about" class="btn btn-coffee-primary btn-lg me-3">Learn More</a>
+                                            <a href="#team" class="btn btn-coffee-outline btn-lg">Meet Experts</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                    <div class="hero-section d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-2">
+                                    <div class="hero-image-wrapper ">
+                                        <img src="/images/image3.jpg" class="img-fluid hero-image" alt="Premium Coffee Experience">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 order-lg-1">
+                                    <div class="hero-content ">
+                                        <h1 class="hero-title">Elevate Your Coffee Experience</h1>
+                                        <p class="hero-description">
+                                            Discover the magic behind every sip. Our coffee workshop is designed to take you beyond the basics, teaching you the art of grinding, brewing, and flavor balancing with seasoned baristas.
+                                        </p>
+                                        <div class="hero-buttons">
+                                            <a href="#testimonials" class="btn btn-coffee-primary btn-lg me-3">Read Reviews</a>
+                                            <a href="#contact" class="btn btn-coffee-outline btn-lg">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="card hero-card about-card scroll-animate slide-in-up">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-lg-6">
+                                <div class="card-body hero-card-body">
+                                    <div class="section-badge">About Us</div>
+                                    <h2 class="card-title hero-card-title">Passionate Coffee Artisans</h2>
+                                    <p class="card-text hero-card-text">
+                                        We are a team of passionate coffee lovers dedicated to sharing our knowledge and expertise with fellow enthusiasts. Our mission is to provide the ultimate coffee experience, whether you're taking your first sip or you're a seasoned connoisseur.
+                                    </p>
+                                    <p class="card-text">
+                                        With years of experience in coffee cultivation, roasting, and brewing, we've mastered the art of transforming simple beans into extraordinary experiences. Join us on this aromatic journey.
+                                    </p>
+                                    <div class="card-stats">
+                                        <div class="stat-item">
+                                            <h4>500+</h4>
+                                            <span>Happy Customers</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <h4>10+</h4>
+                                            <span>Years Experience</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <h4>50+</h4>
+                                            <span>Coffee Varieties</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="hero-image-wrapper">
+                                    <img src="/images/coffee1.jpg" class="card-img hero-card-image" alt="About Our Coffee Journey">
+                                    <div class="image-overlay">
+                                        <i class="fas fa-coffee overlay-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+         <div class="text-center">
+            <button type="button" class="btn btn-coffee-primary btn-lg" onclick="location.href='/pages/about.html'">
+                <i class="fas fa-paper-plane me-2"></i>  Read More
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-coffee-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <div class="section-badge scroll-animate fade-in">Our Services</div>
+                    <h2 class="section-title scroll-animate slide-in-up">Elevate Your Coffee Game</h2>
+                    <p class="section-description scroll-animate slide-in-up">We offer comprehensive services to transform your coffee experience from ordinary to extraordinary.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card hero-card service-card scroll-animate slide-in-left">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-5">
+                                <div class="hero-image-wrapper">
+                                    <img src="/images/coffee2.jpg" class="card-img hero-card-image" alt="Coffee Cupping Experience">
+                                    <div class="service-icon-overlay">
+                                        <i class="fas fa-wine-glass-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body hero-card-body">
+                                    <h3 class="card-title">Professional Coffee Cupping</h3>
+                                    <p class="card-text">
+                                        Master the art of coffee tasting and evaluation like a professional. Learn to identify flavor notes, assess quality, and understand the nuances that make each coffee unique.
+                                    </p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> Sensory evaluation techniques</li>
+                                        <li><i class="fas fa-check"></i> Flavor profiling methods</li>
+                                        <li><i class="fas fa-check"></i> Quality assessment skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card hero-card service-card scroll-animate slide-in-right">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-5">
+                                <div class="hero-image-wrapper">
+                                    <img src="/images/coffee3.jpg" class="card-img hero-card-image" alt="Advanced Brewing Techniques">
+                                    <div class="service-icon-overlay">
+                                        <i class="fas fa-flask"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body hero-card-body">
+                                    <h3 class="card-title">Advanced Brewing Mastery</h3>
+                                    <p class="card-text">
+                                        Perfect your brewing techniques with expert guidance. From pour-over precision to espresso excellence, master every method to create café-quality coffee at home.
+                                    </p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> Multiple brewing methods</li>
+                                        <li><i class="fas fa-check"></i> Equipment optimization</li>
+                                        <li><i class="fas fa-check"></i> Recipe development</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+            <button type="button" class="btn btn-coffee-primary btn-lg" onclick="location.href='/pages/services.html'">
+                <i class="fas fa-paper-plane me-2"></i>Services here!
+            </button>
+        </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section-padding">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <div class="section-badge scroll-animate fade-in">Our Team</div>
+                <h2 class="section-title scroll-animate slide-in-up">Meet Our Coffee Experts</h2>
+                <p class="section-description scroll-animate slide-in-up">Passionate professionals dedicated to sharing their coffee expertise with you.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mb-4">
+                <div class="card hero-card team-card scroll-animate slide-in-left">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4 text-center">
+                            <div class="hero-image-wrapper">
+                                <img src="/images/image4.jpg" class="card-img hero-card-image team-image" alt="John Doe">
+                                <h5>John Doe</h5>
+                                <p>Master Coffee Connoisseur</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="hero-image-wrapper">
+                                <img src="/images/image5.jpg" class="card-img hero-card-image team-image" alt="Billie Jean">
+                                <h5>Billie Jean</h5>
+                                <p>Expert Coffee Brewer</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="hero-image-wrapper">
+                                <img src="/images/image8.jpg" class="card-img hero-card-image team-image" alt="William Jones">
+                                <h5>William Jones</h5>
+                                <p>Master Coffee Roaster</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <p>Our team consists of experienced professionals dedicated to sourcing, roasting, and crafting the best coffee experiences.</p>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-coffee-primary btn-lg" onclick="location.href='/pages/teams.html'">
+                                <i class="fas fa-paper-plane me-2"></i>Know More About Our Team
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+<section id="testimonials" class="section-padding bg-coffee-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <div class="section-badge scroll-animate fade-in">Testimonials</div>
+                <h2 class="section-title scroll-animate slide-in-up">What Our Customers Say</h2>
+                <p class="section-description scroll-animate slide-in-up">Real experiences from coffee enthusiasts who've transformed their brewing skills with us.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card hero-card testimonial-card scroll-animate slide-in-left">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <div class="hero-image-wrapper">
+                                <img src="/images/image6.jpg" class="card-img hero-card-image " alt="Sarah Johnson">
+                                <div class="testimonial-quote-overlay">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body hero-card-body">
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "The coffee cupping workshop completely transformed how I experience coffee. I can now identify flavor notes I never knew existed. The expertise and passion of the team is incredible!"
+                                </p>
+                                <div class="testimonial-author">
+                                    <h5>Sarah Johnson</h5>
+                                    <span class="author-title">Coffee Enthusiast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card hero-card testimonial-card scroll-animate slide-in-right">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <div class="hero-image-wrapper">
+                                <img src="/images/image7.jpg" class="card-img hero-card-image testimonial-image" alt="Michael Chen">
+                                <div class="testimonial-quote-overlay">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body hero-card-body">
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "From amateur to confident home barista in just one workshop! The brewing techniques I learned have elevated my morning routine to a daily coffee ceremony. Absolutely worth it!"
+                                </p>
+                                <div class="testimonial-author">
+                                    <h5>Michael Chen</h5>
+                                    <span class="author-title">Home Barista</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-coffee-primary btn-lg" onclick="location.href='/pages/testimonial.html'">
+                <i class="fas fa-paper-plane me-2"></i>Read More Testimonials
+            </button>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+<section id="contact" class="section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="card hero-card contact-card scroll-animate slide-in-up">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-lg-12">
+                            <div class="card-body hero-card-body">
+                                <div class="section-badge">Get in Touch</div>
+                                <h2 class="card-title hero-card-title">Start Your Coffee Journey</h2>
+                                <p class="card-text hero-card-text">
+                                    Ready to elevate your coffee experience? We'd love to hear from you and help you discover the perfect coffee journey tailored to your taste and goals.
+                                </p>
+                                <div class="contact-info">
+                                    <div class="contact-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <h6>Visit Our Studio</h6>
+                                            <p>123 Coffee Street, Bean City, BC 12345</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <div>
+                                            <h6>Call Us</h6>
+                                            <p>+1 (555) 123-BREW</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div>
+                                            <h6>Email Us</h6>
+                                            <p>hello@coffeemastery.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                <a href =/pages/contact.html>
+                                <button type="button" class="btn btn-coffee-primary btn-lg" onclick="location.href='#contact-page'">
+                                <i class="fas fa-paper-plane me-2"></i>Go to Contact Page
+                                </button>
+                                </a>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-brand">
+                        <h4>C<i class="fa-solid fa-mug-hot"></i>ffee Mastery</h4>
+                        <p>&copy; 2024 Coffee Mastery. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links text-md-end">
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="/javascript/script.js"></script>
+</body>
+</html>
